@@ -3,7 +3,7 @@ node{
      git 'https://github.com/senbagavallinandhagopal/my-app.git'
    }
    stage('Compile-Package'){
-
+     git 'https://github.com/senbagavallinandhagopal/my-app.git'
       def mvnHome =  tool name: 'maven3', type: 'maven'   
       sh "${mvnHome}/bin/mvn clean package"
 	  sh 'mv target/myweb*.war target/newapp.war'
